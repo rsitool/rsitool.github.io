@@ -9,6 +9,10 @@ html, body {
      background-size: cover; 
 }
 
+html {
+  background-color: rgba(15, 44, 62, 0.85);
+}
+
 .sc-navbar {
     background-color: rgba(15, 44, 62, 0.85);  
     backdrop-filter: blur(6px);                
