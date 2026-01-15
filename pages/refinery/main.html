@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Citizen Tools – Refinery Estimates</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light sc-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="../main/main.html">
+          <img
+            src="../../img/bolt.png"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt="Lightning bolt icon"
+          />
+          Star Citizen Tools
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../main/main.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Tools
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="../refinery/main.html"
+                    >Refinery</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../scanning/main.html"
+                    >Scanning Signatures</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact/main.html">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://robertsspaceindustries.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Official Site ↗
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="d-flex flex-column min-vh-100">
+      <div class="container mt-4 mt-md-5 flex-grow-1">
+        <h2 class="text-center text-white mb-4">
+          Ship Mining Profitability – Refinery Estimates
+        </h2>
+
+        <div role="alert" class="alert alert-info text-center">
+          <strong
+            >Information provided by
+            <a
+              href="https://regolith.rocks/tables/market"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="alert-info"
+            >
+              Regolith.Rocks
+            </a>
+          </strong>
+          <div></div>
+          Approximate aUEC values per full load (static community estimates •
+          prices fluctuate • refined yields higher value but volume loss)
+        </div>
+
+        <div class="table-responsive">
+          <table
+            class="table table-dark table-striped table-hover text-center align-middle"
+          >
+            <thead class="bg-cyan text-white">
+              <tr>
+                <th rowspan="2" class="align-middle">Ore</th>
+                <th colspan="2">1 SCU (Prospector)</th>
+                <th colspan="2">32 SCU (Prospector full / Drake Golem)</th>
+                <th colspan="2">96 SCU (Argo Mole)</th>
+              </tr>
+              <tr>
+                <th>Unrefined</th>
+                <th>Refined</th>
+                <th>Unrefined</th>
+                <th>Refined</th>
+                <th>Unrefined</th>
+                <th>Refined</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-success">
+                <td>Riocite</td>
+                <td>5,151 aUEC</td>
+                <td>189,957 aUEC</td>
+                <td>165k aUEC</td>
+                <td>3.5m aUEC</td>
+                <td>—</td>
+                <td>11m aUEC</td>
+              </tr>
+              <tr class="table-success">
+                <td>Stileron</td>
+                <td>22,287 aUEC</td>
+                <td>185,473 aUEC</td>
+                <td>711k aUEC</td>
+                <td>3.4m aUEC</td>
+                <td>2.1m aUEC</td>
+                <td>18m aUEC</td>
+              </tr>
+              <tr class="table-warning">
+                <td>Savvilaronium</td>
+                <td>0 aUEC</td>
+                <td>181,208 aUEC</td>
+                <td>0 aUEC</td>
+                <td>3.2m aUEC</td>
+                <td>0 aUEC</td>
+                <td>9.1m aUEC</td>
+              </tr>
+              <tr class="table-warning">
+                <td>Quantanium</td>
+                <td>24,208 aUEC</td>
+                <td>181,378 aUEC</td>
+                <td>774k aUEC</td>
+                <td>3.9m aUEC</td>
+                <td>2.3m aUEC</td>
+                <td>9.1m aUEC</td>
+              </tr>
+              <tr class="table-info">
+                <td>Lindinium</td>
+                <td>0 aUEC</td>
+                <td>24,292 aUEC</td>
+                <td>0 aUEC</td>
+                <td>777k aUEC</td>
+                <td>0 aUEC</td>
+                <td>2.3m aUEC</td>
+              </tr>
+              <tr class="table-success">
+                <td>Taranite</td>
+                <td>5,648 aUEC</td>
+                <td>22,335 aUEC</td>
+                <td>181k aUEC</td>
+                <td>715k aUEC</td>
+                <td>542k aUEC</td>
+                <td>2.1m aUEC</td>
+              </tr>
+              <tr class="table-warning">
+                <td>Bexalite</td>
+                <td>2,672 aUEC</td>
+                <td>22,376 aUEC</td>
+                <td>167k aUEC</td>
+                <td>268k aUEC</td>
+                <td>597k aUEC</td>
+                <td>884k aUEC</td>
+              </tr>
+              <tr>
+                <td>Diamond</td>
+                <td>1,628 aUEC</td>
+                <td>8,871 aUEC</td>
+                <td>0 aUEC</td>
+                <td>263k aUEC</td>
+                <td>0 aUEC</td>
+                <td>796k aUEC</td>
+              </tr>
+              <tr>
+                <td>Borase</td>
+                <td>1,281 aUEC</td>
+                <td>6,871 aUEC</td>
+                <td>52k aUEC</td>
+                <td>252k aUEC</td>
+                <td>125k aUEC</td>
+                <td>556k aUEC</td>
+              </tr>
+              <tr>
+                <td>Laranite</td>
+                <td>1,281 aUEC</td>
+                <td>7,678 aUEC</td>
+                <td>52k aUEC</td>
+                <td>252k aUEC</td>
+                <td>194k aUEC</td>
+                <td>556k aUEC</td>
+              </tr>
+              <tr>
+                <td>Hephaesitanite</td>
+                <td>1,229 aUEC</td>
+                <td>5,544 aUEC</td>
+                <td>39k aUEC</td>
+                <td>177k aUEC</td>
+                <td>118k aUEC</td>
+                <td>532k aUEC</td>
+              </tr>
+              <tr>
+                <td>Beryl</td>
+                <td>1,122 aUEC</td>
+                <td>5,523 aUEC</td>
+                <td>33k aUEC</td>
+                <td>145k aUEC</td>
+                <td>108k aUEC</td>
+                <td>435k aUEC</td>
+              </tr>
+              <tr>
+                <td>Agricium</td>
+                <td>1,835 aUEC</td>
+                <td>4,532 aUEC</td>
+                <td>33k aUEC</td>
+                <td>145k aUEC</td>
+                <td>98k aUEC</td>
+                <td>435k aUEC</td>
+              </tr>
+              <tr>
+                <td>Ice</td>
+                <td>636 aUEC</td>
+                <td>2,989 aUEC</td>
+                <td>281k aUEC</td>
+                <td>96k aUEC</td>
+                <td>61k aUEC</td>
+                <td>287k aUEC</td>
+              </tr>
+              <tr>
+                <td>Tungsten</td>
+                <td>562 aUEC</td>
+                <td>2,734 aUEC</td>
+                <td>17k aUEC</td>
+                <td>82k aUEC</td>
+                <td>54k aUEC</td>
+                <td>262k aUEC</td>
+              </tr>
+              <tr>
+                <td>Torite</td>
+                <td>0 aUEC</td>
+                <td>2,417 aUEC</td>
+                <td>0 aUEC</td>
+                <td>77k aUEC</td>
+                <td>0 aUEC</td>
+                <td>232k aUEC</td>
+              </tr>
+              <tr>
+                <td>Iron</td>
+                <td>493 aUEC</td>
+                <td>2,338 aUEC</td>
+                <td>16k aUEC</td>
+                <td>78k aUEC</td>
+                <td>47k aUEC</td>
+                <td>224k aUEC</td>
+              </tr>
+              <tr>
+                <td>Quartz</td>
+                <td>449 aUEC</td>
+                <td>2,189 aUEC</td>
+                <td>14k aUEC</td>
+                <td>76k aUEC</td>
+                <td>43k aUEC</td>
+                <td>216k aUEC</td>
+              </tr>
+              <tr>
+                <td>Copper</td>
+                <td>420 aUEC</td>
+                <td>2,064 aUEC</td>
+                <td>13k aUEC</td>
+                <td>66k aUEC</td>
+                <td>40k aUEC</td>
+                <td>198k aUEC</td>
+              </tr>
+              <tr>
+                <td>Aluminum</td>
+                <td>391 aUEC</td>
+                <td>1,945 aUEC</td>
+                <td>13k aUEC</td>
+                <td>62k aUEC</td>
+                <td>38k aUEC</td>
+                <td>187k aUEC</td>
+              </tr>
+              <tr>
+                <td>Tin</td>
+                <td>480 aUEC</td>
+                <td>1,871 aUEC</td>
+                <td>13k aUEC</td>
+                <td>66k aUEC</td>
+                <td>49k aUEC</td>
+                <td>188k aUEC</td>
+              </tr>
+              <tr>
+                <td>Silicon</td>
+                <td>285 aUEC</td>
+                <td>1,394 aUEC</td>
+                <td>9.1k aUEC</td>
+                <td>45k aUEC</td>
+                <td>27k aUEC</td>
+                <td>134k aUEC</td>
+              </tr>
+              <tr class="table-secondary">
+                <td>InertMaterial</td>
+                <td>8,280 aUEC</td>
+                <td>0 aUEC</td>
+                <td>0 aUEC</td>
+                <td>0 aUEC</td>
+                <td>0 aUEC</td>
+                <td>0 aUEC</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <footer class="py-3 text-center text-white-50 small">
+        <div class="container">
+          <p class="mb-2">
+            Values are approximate • Refined = higher per-unit value but volume
+            loss • Check in-game or tools like UEX/Regolith for current prices.
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

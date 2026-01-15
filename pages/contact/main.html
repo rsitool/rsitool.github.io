@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Citizen Tools – Contact & Contribute</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light sc-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="../main/main.html">
+          <img
+            src="../../img/bolt.png"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt="Lightning bolt"
+          />
+          Star Citizen Tools
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../main/main.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Tools</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="../refinery/main.html"
+                    >Refinery</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../scanning/main.html"
+                    >Scanning Signatures</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../contact/main.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://robertsspaceindustries.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Official Site ↗</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="d-flex flex-column min-vh-100">
+      <div class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-9 col-xl-8">
+            <h2 class="text-center text-cyan mb-4 fw-bold">
+              CONTRIBUTE DATA • IMPROVE TOOLS
+            </h2>
+
+            <div
+              class="alert alert-info border-cyan-subtle mb-5 text-center"
+              role="alert"
+            >
+              <h5 class="alert-heading mb-2">YOUR SCANS MATTER</h5>
+              <p class="mb-1">
+                Patches break old data. Fresh signatures, new hotspots, wrong
+                values — send them here.<br />
+                Community intel keeps the sheet accurate. o7
+              </p>
+            </div>
+
+            <!-- New form container with sci-fi panel styling -->
+            <div class="mining-panel">
+              <div class="panel-header text-center text-cyan fw-semibold py-3">
+                DATA SUBMISSION TERMINAL
+              </div>
+              <div class="panel-body p-4 p-md-5">
+                <form
+                  id="contactForm"
+                  class="needs-validation row g-4"
+                  novalidate
+                >
+                  <div class="col-md-6">
+                    <label for="email" class="form-label text-light fw-bold"
+                      >EMAIL <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      id="email"
+                      placeholder="you@hangar.space"
+                      required
+                    />
+                    <div class="invalid-feedback">Valid email required.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="handle" class="form-label text-light fw-bold"
+                      >IN-GAME HANDLE (optional)</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="handle"
+                      placeholder="Arxy"
+                    />
+                  </div>
+
+                  <div class="col-12">
+                    <label for="subject" class="form-label text-light fw-bold"
+                      >CATEGORY <span class="text-danger">*</span></label
+                    >
+                    <select
+                      class="form-select form-select-lg"
+                      id="subject"
+                      required
+                    >
+                      <option value="" selected disabled>Select...</option>
+                      <option>Updated rock signatures / RS values</option>
+                      <option>New mining locations / percentages</option>
+                      <option>Bug • incorrect data</option>
+                      <option>Feature / tool suggestion</option>
+                      <option>Other</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please choose a category.
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="message" class="form-label text-light fw-bold"
+                      >DETAILS / SCAN DATA
+                      <span class="text-danger">*</span></label
+                    >
+                    <textarea
+                      class="form-control form-control-lg"
+                      id="message"
+                      rows="8"
+                      placeholder="Patch 3.24 • Aberdeen Hadanite cluster (6 rocks) → RS 785 (prev 620)&#10;Dolivine hotspot now active near microTech Calliope..."
+                      required
+                    ></textarea>
+                    <div class="invalid-feedback">
+                      Enter your report (min 10 characters).
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="agree"
+                        required
+                      />
+                      <label class="form-check-label text-light-75" for="agree">
+                        I allow non-personal data to be used in public mining
+                        sheet updates.
+                      </label>
+                      <div class="invalid-feedback">Agreement required.</div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 d-grid">
+                    <button class="btn btn-cyan btn-lg fw-bold" type="submit">
+                      TRANSMIT REPORT
+                    </button>
+                  </div>
+                </form>
+
+                <div id="formFeedback" class="mt-4 d-none"></div>
+              </div>
+            </div>
+
+            <div class="text-center mt-5 text-light-50 small">
+              <p>Thanks for contributing — accurate data helps every miner.</p>
+              <p class="mb-1">
+                Personal info used only for follow-up if needed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer remains the same -->
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

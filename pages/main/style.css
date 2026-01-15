@@ -1,0 +1,100 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url('../../img/gif-ship4.gif') no-repeat center center fixed; 
+     background-size: cover; 
+}
+
+.sc-navbar {
+    background-color: rgba(15, 44, 62, 0.85);  
+    backdrop-filter: blur(6px);                
+    border-bottom: 1px solid rgba(63, 220, 255, 0.15);
+}
+
+.sc-navbar .navbar-brand {
+    color: #e6f1f5;
+    letter-spacing: 0.5px;
+}
+
+.sc-navbar .navbar-brand:hover {
+    color: #3fdcff;
+}
+
+.sc-navbar .nav-link {
+    color: #a9c6d3;
+    transition: color 0.15s ease;
+}
+
+.sc-navbar .nav-link:hover,
+.sc-navbar .nav-link.active {
+    color: #3fdcff;
+}
+
+.sc-navbar .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.alert {
+  position: relative;
+  z-index: 1;  
+}
+
+.sc-navbar .dropdown {
+  position: relative;
+  z-index: 1060;            
+}
+
+.sc-navbar .dropdown-menu {
+  z-index: 1055 !important;
+}
+
+
+
+
+.alert {
+    background-color: rgba(13, 110, 253, 0.18); 
+    border-color: rgba(13, 110, 253, 0.4);
+    color: #e0f7ff;
+    backdrop-filter: blur(4px);
+}
+
+footer {
+  background: rgba(3, 7, 10, 0.6);     
+  backdrop-filter: blur(8px);           
+  border-top: 1px solid rgba(63, 220, 255, 0.12);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer a {
+  color: #3fdcff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #a0f0ff;
+  text-decoration: underline;
+}
+
+.text-cyan {
+  color: #3fdcff !important;
+}
+
+.table-dark {
+  --bs-table-bg: rgba(15, 44, 62, 0.85); 
+  --bs-table-accent-bg: rgba(63, 220, 255, 0.08);
+  --bs-table-striped-bg: rgba(13, 33, 46, 0.7);
+}
+
+.bg-button {
+    background-color: rgb(84,173,247);
+}
+
+.py-10 {
+  padding-top: 9rem !important;
+  padding-bottom: 2rem !important;
+}

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Citizen Tools – Mining Help Sheet</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light sc-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="../main/main.html">
+          <img
+            src="../../img/bolt.png"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt="Lightning bolt icon"
+          />
+          Star Citizen Tools
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../main/main.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Tools
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="../refinery/main.html"
+                    >Refinery</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../scanning/main.html"
+                    >Scanning Signatures</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact/main.html">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://robertsspaceindustries.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Official Site ↗
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="d-flex flex-column min-vh-100">
+      <div class="container mt-4 mt-md-5 flex-grow-1">
+        <h2 class="text-center text-white mb-4">
+          Star Citizen Mining Help Sheet – Scanning Signatures (v3.23.1a)
+        </h2>
+
+        <div role="alert" class="alert alert-info text-center">
+          <strong>RS = Radar Signature</strong> – values are approximate
+          multiples (cluster RS = sum of individual rocks).<br />
+          Data compiled from community sources (Regolith.Rocks, Reddit,
+          Spectrum). Always double-check in-game as patches can change values.
+        </div>
+
+        <h3 class="text-white mb-3">
+          Planetary Rocks (Ship – Prospector / Mole)
+        </h3>
+        <div class="table-responsive mb-5">
+          <table
+            class="table table-dark table-striped table-hover text-center align-middle"
+          >
+            <thead class="bg-purple text-white">
+              <tr>
+                <th>Rock Type</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+                <th>11</th>
+                <th>12</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Gems nodes</td>
+                <td>620</td>
+                <td>1240</td>
+                <td>1860</td>
+                <td>2480</td>
+                <td>3100</td>
+                <td>3720</td>
+                <td>4340</td>
+                <td>4960</td>
+                <td>5580</td>
+                <td>6200</td>
+                <td>6820</td>
+                <td>7440</td>
+              </tr>
+              <tr>
+                <td>SHALE</td>
+                <td>1730</td>
+                <td>3460</td>
+                <td>5190</td>
+                <td>6920</td>
+                <td>8650</td>
+                <td>10380</td>
+                <td>12110</td>
+                <td>13840</td>
+                <td>15570</td>
+                <td>17300</td>
+                <td>19030</td>
+                <td>20760</td>
+              </tr>
+              <tr>
+                <td>FELSIC</td>
+                <td>1770</td>
+                <td>3540</td>
+                <td>5310</td>
+                <td>7080</td>
+                <td>8850</td>
+                <td>10620</td>
+                <td>12390</td>
+                <td>14160</td>
+                <td>15930</td>
+                <td>17700</td>
+                <td>19470</td>
+                <td>21240</td>
+              </tr>
+              <tr>
+                <td>OBSIDIAN</td>
+                <td>1790</td>
+                <td>3580</td>
+                <td>5370</td>
+                <td>7160</td>
+                <td>8950</td>
+                <td>10740</td>
+                <td>12530</td>
+                <td>14320</td>
+                <td>16110</td>
+                <td>17900</td>
+                <td>19690</td>
+                <td>21480</td>
+              </tr>
+              <tr>
+                <td>ATACAMITE</td>
+                <td>1800</td>
+                <td>3600</td>
+                <td>5400</td>
+                <td>7200</td>
+                <td>9000</td>
+                <td>10800</td>
+                <td>12600</td>
+                <td>14400</td>
+                <td>16200</td>
+                <td>18000</td>
+                <td>19800</td>
+                <td>21600</td>
+              </tr>
+              <tr>
+                <td>QUARTZITE</td>
+                <td>1820</td>
+                <td>3640</td>
+                <td>5460</td>
+                <td>7280</td>
+                <td>9100</td>
+                <td>10920</td>
+                <td>12740</td>
+                <td>14560</td>
+                <td>16380</td>
+                <td>18200</td>
+                <td>20020</td>
+                <td>21840</td>
+              </tr>
+              <tr>
+                <td>GNEISS</td>
+                <td>1840</td>
+                <td>3680</td>
+                <td>5520</td>
+                <td>7360</td>
+                <td>9200</td>
+                <td>11040</td>
+                <td>12880</td>
+                <td>14720</td>
+                <td>16560</td>
+                <td>18400</td>
+                <td>20240</td>
+                <td>22080</td>
+              </tr>
+              <tr>
+                <td>GRANITE</td>
+                <td>1920</td>
+                <td>3840</td>
+                <td>5760</td>
+                <td>7680</td>
+                <td>9600</td>
+                <td>11520</td>
+                <td>13440</td>
+                <td>15360</td>
+                <td>17280</td>
+                <td>19200</td>
+                <td>21120</td>
+                <td>23040</td>
+              </tr>
+              <tr>
+                <td>IGNEOUS</td>
+                <td>1950</td>
+                <td>3900</td>
+                <td>5850</td>
+                <td>7800</td>
+                <td>9750</td>
+                <td>11700</td>
+                <td>13650</td>
+                <td>15600</td>
+                <td>17550</td>
+                <td>19500</td>
+                <td>21450</td>
+                <td>23400</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- ROC -->
+        <h3 class="text-white mb-3">
+          ROC / Hand-Mining Gems (Multi-tool / ROC / ATLS GEO)
+        </h3>
+        <div class="alert alert-warning mb-3">
+          Very low signatures compared to ship rocks. Use low-power scan
+          (25–50%) from ROC or close range. Most common single rock / small
+          cluster values reported by community.
+        </div>
+        <div class="table-responsive mb-4">
+          <table
+            class="table table-dark table-striped table-hover text-center align-middle"
+          >
+            <thead class="bg-teal text-white">
+              <tr>
+                <th>Gem</th>
+                <th>Typical Single Rock RS</th>
+                <th>Large / Cluster Example</th>
+                <th>Best Moons / Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hadanite</td>
+                <td>~120–150</td>
+                <td>~600–620 (large)</td>
+                <td>Aberdeen, Daymar, Arial – pink crystals, highest value</td>
+              </tr>
+              <tr>
+                <td>Dolivine</td>
+                <td>~120–150</td>
+                <td>~600–620</td>
+                <td>Cellin, Yela, microTech moons – green</td>
+              </tr>
+              <tr>
+                <td>Aphorite</td>
+                <td>~120</td>
+                <td>~600–620</td>
+                <td>Caves & surface outcrops – violet</td>
+              </tr>
+              <tr>
+                <td>Janalite</td>
+                <td>~120</td>
+                <td>~600–620</td>
+                <td>Magda, Ita, Wala</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h5 class="text-white mb-3">Quick ROC Tips</h5>
+        <ul class="list-group list-group-flush mb-5 list-group-item-dark">
+          <li class="list-group-item">
+            120 ≈ single small gem, 240 ≈ 2, 600–620 ≈ large / good cluster
+          </li>
+          <li class="list-group-item">
+            Scan low & slow – large planetary rocks can hide small ones if power
+            is too high
+          </li>
+          <li class="list-group-item">
+            Hadanite sells raw (~270–300 aUEC/unit) – aim for clusters > 3–4
+            rocks
+          </li>
+          <li class="list-group-item">
+            Best spots in 4.x: Aberdeen (Hadanite heavy), Daymar caves
+          </li>
+          <li class="list-group-item">
+            If rocks don't interact → relog or server hop (common bug)
+          </li>
+        </ul>
+
+        <h3 class="text-white mb-3">Asteroid Rocks (Ship Mining)</h3>
+        <div class="table-responsive mb-5">
+          <table
+            class="table table-dark table-striped table-hover text-center align-middle"
+          >
+            <thead class="bg-purple text-white">
+              <tr>
+                <th>Asteroid Type</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+                <th>11</th>
+                <th>12</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>C-TYPE</td>
+                <td>1700</td>
+                <td>3400</td>
+                <td>5100</td>
+                <td>6800</td>
+                <td>8500</td>
+                <td>10200</td>
+                <td>11900</td>
+                <td>13600</td>
+                <td>15300</td>
+                <td>17000</td>
+                <td>18700</td>
+                <td>20400</td>
+              </tr>
+              <tr>
+                <td>S-TYPE</td>
+                <td>1720</td>
+                <td>3440</td>
+                <td>5160</td>
+                <td>6880</td>
+                <td>8600</td>
+                <td>10320</td>
+                <td>12040</td>
+                <td>13760</td>
+                <td>15480</td>
+                <td>17200</td>
+                <td>18920</td>
+                <td>20640</td>
+              </tr>
+              <tr>
+                <td>P-TYPE</td>
+                <td>1750</td>
+                <td>3500</td>
+                <td>5250</td>
+                <td>7000</td>
+                <td>8750</td>
+                <td>10500</td>
+                <td>12250</td>
+                <td>14000</td>
+                <td>15750</td>
+                <td>17500</td>
+                <td>19250</td>
+                <td>21000</td>
+              </tr>
+              <tr>
+                <td>M-TYPE</td>
+                <td>1850</td>
+                <td>3700</td>
+                <td>5550</td>
+                <td>7400</td>
+                <td>9250</td>
+                <td>11100</td>
+                <td>12950</td>
+                <td>14800</td>
+                <td>16650</td>
+                <td>18500</td>
+                <td>20350</td>
+                <td>22200</td>
+              </tr>
+              <tr>
+                <td>Q-TYPE</td>
+                <td>1870</td>
+                <td>3740</td>
+                <td>5610</td>
+                <td>7480</td>
+                <td>9350</td>
+                <td>11220</td>
+                <td>13090</td>
+                <td>14960</td>
+                <td>16830</td>
+                <td>18700</td>
+                <td>20570</td>
+                <td>22440</td>
+              </tr>
+              <tr>
+                <td>E-TYPE</td>
+                <td>1900</td>
+                <td>3800</td>
+                <td>5700</td>
+                <td>7600</td>
+                <td>9500</td>
+                <td>11400</td>
+                <td>13300</td>
+                <td>15200</td>
+                <td>17100</td>
+                <td>19000</td>
+                <td>20900</td>
+                <td>22800</td>
+              </tr>
+              <tr>
+                <td>SALVAGE PANELS</td>
+                <td>2000</td>
+                <td>4000</td>
+                <td>6000</td>
+                <td>8000</td>
+                <td>10000</td>
+                <td>12000</td>
+                <td>14000</td>
+                <td>16000</td>
+                <td>18000</td>
+                <td>20000</td>
+                <td>22000</td>
+                <td>24000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Best asteroid mining locations -->
+        <h3 class="text-white mb-3">Best Asteroid Mining Locations</h3>
+        <div class="table-responsive mb-5">
+          <table
+            class="table table-dark table-striped table-hover text-center align-middle"
+          >
+            <thead class="bg-orange text-white">
+              <tr>
+                <th>Mineral</th>
+                <th>Best Scan Order</th>
+                <th>Top Locations (community ranked)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Quantanium</td>
+                <td>QEPSCM</td>
+                <td>ARC-L5-A, CRU-L4-A, ARC-L4-A, MIC-L3-A, Aaron Halo</td>
+              </tr>
+              <tr>
+                <td>Bexalite</td>
+                <td>PCSCQEM</td>
+                <td>HUR-L1-A, HUR-L4-A, HUR-L5-A, MIC-L4-A, CRU-L1-A</td>
+              </tr>
+              <tr>
+                <td>Taranite</td>
+                <td>CSPQEM</td>
+                <td>ARC-L1-A, CRU-L4-A, HUR-L2-A, Yela Belt, ARC-L4-A</td>
+              </tr>
+              <tr>
+                <td>Gold</td>
+                <td>EMQCSP</td>
+                <td>ARC-L5-A, CRU-L4-A, MIC-L3-A, ARC-L4-A, CRU-L1-A</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4 class="text-white mb-3 mt-5">Lyria / Wala Probability</h4>
+        <div class="row">
+          <div class="col-md-6">
+            <h5 class="text-white">Lyria</h5>
+            <table class="table table-dark table-striped table-hover">
+              <thead class="bg-green text-white">
+                <tr>
+                  <th>Quantanium</th>
+                  <th>Gold</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Felsic - Aluminum 16%</td>
+                  <td>Shale - Aluminum 30%</td>
+                </tr>
+                <tr>
+                  <td>Granite - Aluminum 18%</td>
+                  <td>Granite - Corundum 30%</td>
+                </tr>
+                <tr>
+                  <td>Shale - Aluminum 10%</td>
+                  <td>Atacamite - Tungsten 30%</td>
+                </tr>
+                <tr>
+                  <td>Obsidian - Corundum 10%</td>
+                  <td>Granite - Aluminum 20%</td>
+                </tr>
+                <tr>
+                  <td>Igneous - Tungsten 10%</td>
+                  <td>Gneiss - Aluminum 20%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-6">
+            <h5 class="text-white">Wala</h5>
+            <table class="table table-dark table-striped table-hover">
+              <thead class="bg-blue text-white">
+                <tr>
+                  <th>Quantanium</th>
+                  <th>Gold</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Granite - Aluminum 16%</td>
+                  <td>Atacamite - Corundum 40%</td>
+                </tr>
+                <tr>
+                  <td>Atacamite - Corundum 14%</td>
+                  <td>Granite - Aluminum 30%</td>
+                </tr>
+                <tr>
+                  <td>Shale - Aluminum 10%</td>
+                  <td>Shale - Corundum 30%</td>
+                </tr>
+                <tr>
+                  <td>Igneous - Tungsten 10%</td>
+                  <td>Granite - Aluminum 30%</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Shale - Corundum 30%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <footer class="py-3 text-center text-white-50 small">
+        <div class="container">
+          <p class="mb-2">
+            Values are approximate • Based on v3.23.1a • Check in-game or
+            community tools for updates.
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
