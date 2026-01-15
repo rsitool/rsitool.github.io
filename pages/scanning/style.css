@@ -6,6 +6,7 @@
 
 html,
 body {
+      background-color: #0f2c3e;
     scroll-behavior: smooth;
   margin: 0;
   padding: 0;
