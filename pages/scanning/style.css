@@ -16,7 +16,7 @@ body {
 }
 
 .sc-navbar {
-  background-color: rgba(15, 44, 62, 0.88);
+  background-color: rgba(15, 44, 62, 1);
   backdrop-filter: blur(4px);
   border-bottom: 1px solid rgba(63, 220, 255, 0.18);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
